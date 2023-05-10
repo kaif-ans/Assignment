@@ -6,20 +6,18 @@ import Navbar from "./Navbar";
 const HomePage = () => {
   const data = Data;
 
-  const [apply, setApply] = React.useState(false);
+  const [jobListingData, setJobListingData] = React.useState(data);
 
-  function applyJob() {
-    setApply((prev) => !prev);
+  function handleApplyJob(jobId) {
+    const changeSelectedJob = jobListingData.map((j) =>
+      j.id === jobId ? { ...j, isApplied: !j.isApplied } : j
+    );
+    setJobListingData(changeSelectedJob);
   }
   return (
     <div className="home">
       <Navbar />
-      {/* <img
-        src="src\images\bg-header-desktop.svg"
-        alt="bg"
-        className="head-bg"
-      /> */}
-      {data.map((dt) => (
+      {jobListingData.map((dt) => (
         <div className="container">
           <div>
             <img src={dt.logo} />
@@ -31,19 +29,16 @@ const HomePage = () => {
               {dt.postedAt} • {dt.contract} • {dt.location}
             </div>
           </div>
-          <div className="role">{dt.role}</div>
+          <div className="role">{dt.tools[0]}</div>
           <div className="role">{dt.experience}</div>
           <div className="level">{dt.salary}</div>
-          {/* <Button
+          <Button
             variant="contained"
-            size="small"
-            onClick={applyJob}
-            color={apply ? "success" : "primary"}
+            size="medium"
+            onClick={() => handleApplyJob(dt.id)}
+            color={dt.isApplied ? "success" : "primary"}
           >
-            {apply ? "Applied" : "Apply"}
-          </Button> */}
-          <Button variant="contained" size="small">
-            Apply
+            {dt.isApplied ? "Applied" : "Apply"}
           </Button>
         </div>
       ))}

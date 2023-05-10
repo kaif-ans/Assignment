@@ -13,8 +13,9 @@ export default [
       "location": "Mumbai",
       "experience": "0 - 3 Yrs",
       "salary": "₹ 3 - 6 LPA",
+      "isApplied": false,
       "languages": ["HTML", "CSS", "JavaScript"],
-      "tools": []
+      "tools": ["React"]
     },
     {
       "id": 2,
@@ -30,8 +31,9 @@ export default [
       "location": "Remote",
       "experience": "0 - 2 Yrs",
       "salary": "₹ 5 - 7 LPA",
+      "isApplied": false,
       "languages": ["Python"],
-      "tools": ["React"]
+      "tools": ["Angular"]
     },
     {
       "id": 3,
@@ -47,6 +49,7 @@ export default [
       "location": "Thane",
       "experience": "1 - 3 Yrs",
       "salary": "₹ 2 - 4 LPA",
+      "isApplied": false,
       "languages": ["JavaScript"],
       "tools": ["React", "Sass"]
     },
@@ -64,8 +67,9 @@ export default [
       "location": "Pune",
       "experience": "0 - 1 Yr",
       "salary": "₹ 2 - 3 LPA",
+      "isApplied": false,
       "languages": ["CSS", "JavaScript"],
-      "tools": []
+      "tools": ["Bootstrap"]
     },
     {
       "id": 5,
@@ -81,6 +85,7 @@ export default [
       "location": "Mumbai",
       "experience": "2 - 3 Yrs",
       "salary": "₹ 5 - 8 LPA",
+      "isApplied": false,
       "languages": ["JavaScript"],
       "tools": ["Ruby", "Sass"]
     },
@@ -98,8 +103,9 @@ export default [
       "location": "Remote",
       "experience": "1 - 3 Yrs",
       "salary": "₹ 3 - 5 LPA",
+      "isApplied": false,
       "languages": ["Ruby"],
-      "tools": ["RoR"]
+      "tools": ["Node JS"]
     },
     {
       "id": 7,
@@ -115,8 +121,9 @@ export default [
       "location": "Thane",
       "experience": "0 - 2 Yrs",
       "salary": "₹ 3 - 4 LPA",
+      "isApplied": false,
       "languages": ["HTML", "JavaScript"],
-      "tools": ["Sass"]
+      "tools": ["Vue"]
     },
     {
       "id": 8,
@@ -132,8 +139,9 @@ export default [
       "location": "Mumbai",
       "experience": "2 - 4 Yrs",
       "salary": "₹ 4 - 6 LPA",
+      "isApplied": false,
       "languages": ["JavaScript"],
-      "tools": ["Vue", "Sass"]
+      "tools": ["React", "Sass"]
     },
     {
       "id": 9,
@@ -149,6 +157,7 @@ export default [
       "location": "Remote",
       "experience": "0 - 1 Yr",
       "salary": "₹ 3 - 4 LPA",
+      "isApplied": false,
       "languages": ["JavaScript", "Python"],
       "tools": ["Django"]
     },
@@ -166,6 +175,7 @@ export default [
       "location": "Thane",
       "experience": "1 - 2 Yrs",
       "salary": "₹ 3 - 4 LPA",
+      "isApplied": false,
       "languages": ["JavaScript"],
       "tools": ["React", "Sass"]
     }

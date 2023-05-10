@@ -26,7 +26,7 @@ body {
 }
 .comp-detail-div {
 /* border: 1px solid; */
-margin-right: 70px;
+margin-right: 50px;
 }
 .company {
   font-size: large;
@@ -61,7 +61,14 @@ margin-right: 70px;
 }
 
 .jobform {
-    border: solid;
+    border: 2px solid rgb(101, 163, 175);
     width: 500px;
     margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+.post-new-job {
+    font-size:xx-large;
+  font-weight: 600;
+  color: rgb(98, 188, 206);
 }

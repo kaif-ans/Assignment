@@ -26,7 +26,7 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton> */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Easy Jobs
+            &nbsp; &nbsp; &nbsp; Easy Jobs
           </Typography>
           <Link href="/jobform">
             <Button variant="contained">Create Job</Button>
