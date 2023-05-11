@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
 
 export default function BasicTextFields() {
   return (
@@ -26,7 +27,7 @@ export default function BasicTextFields() {
           id="outlined-basic"
           label="Company"
           variant="outlined"
-        //   focused
+          //   focused
         />
         <TextField
           id="outlined-basic"
@@ -44,13 +45,13 @@ export default function BasicTextFields() {
           id="outlined-basic"
           label="Location"
           variant="outlined"
-        //   focused
+          //   focused
         />
         <TextField
           id="outlined-basic"
           label="Experience"
           variant="outlined"
-        //   focused
+          //   focused
         />
         <TextField
           id="outlined-basic"
@@ -58,7 +59,9 @@ export default function BasicTextFields() {
           variant="outlined"
           focused
         />
-        <Button variant="contained">Submit</Button>
+        <Link href="/home">
+          <Button className="sub-btn" variant="contained">Submit</Button>
+        </Link>
       </Box>
     </div>
   );
